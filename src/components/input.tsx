@@ -33,15 +33,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         gap: 16,
-        padding: 16,
+        padding: 8,
         borderColor: 'white',
         borderRadius: 4,
         borderWidth: 0.5,
     },
 
     input:{
-        width: 'auto',
-        height: 800,
+        width: 350,
+        height: 35,
         color: 'white',
+        paddingLeft: 2,
+        borderWidth: 0,
+        borderColor: 'transparent'
     }
 })

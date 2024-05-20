@@ -10,7 +10,7 @@ export function Loading(){
 const styles = StyleSheet.create({
     activity:{
         flex: 1,
-        backgroundColor: 'green',
+        backgroundColor: '#610CE1',
         alignItems: 'center',
         justifyContent: 'center'
     }
