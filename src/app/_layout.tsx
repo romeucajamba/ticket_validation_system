@@ -10,7 +10,7 @@ import {
 
  } from '@expo-google-fonts/roboto';
 
-import { StatusBar } from "expo-status-bar";
+
 import { Slot } from 'expo-router';
 import { Loading } from '../components/loading';
 
@@ -23,13 +23,13 @@ export default function Layout(){
         Roboto_400Regular
     })
 
+    if(!fontsLoader){
+        return <Loading />
+    }
 
 
     return (
-        <>
-            <StatusBar style="light"/>
-            { fontsLoader ? <Slot/> : <Loading />}
-        </>
+            <Slot/>
         )
 }
 
